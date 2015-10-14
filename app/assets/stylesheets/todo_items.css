@@ -41,7 +41,7 @@ section.el_show {
 
 /*EDIT MENU*/
 .el_color h1 {
-	font-family:  'Ubuntu'. sans-serif;
+	font-family:  'Ubuntu', sans-serif;
   font-size: 3em;
   padding-bottom: 1em;
   text-align: center;
