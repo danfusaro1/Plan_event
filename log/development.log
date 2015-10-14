@@ -65074,3 +65074,11 @@ Processing by TodoItemsController#index as HTML
   [1m[35mTodoItem Load (0.4ms)[0m  SELECT "todo_items".* FROM "todo_items"
   Rendered todo_items/index.html.erb within layouts/application (3.8ms)
 Completed 200 OK in 299ms (Views: 282.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-10-14 16:59:18 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TodoItemsController#index as HTML
+  [1m[35mTodoItem Load (0.4ms)[0m  SELECT "todo_items".* FROM "todo_items"
+  Rendered todo_items/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 352ms (Views: 336.5ms | ActiveRecord: 0.6ms)
