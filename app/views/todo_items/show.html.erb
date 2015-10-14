@@ -1,0 +1,27 @@
+<section class="el_vCard el_show text-center">
+	<p id="notice"><%= notice %></p>
+
+	<p>
+	  <strong>Location:</strong>
+	  <%= @todo_item.title %>
+	</p>
+
+	<p>
+	  <strong>Description:</strong>
+	  <%= @todo_item.description %>
+	</p>
+
+	<p>
+	  <strong>Done:</strong>
+	  <%= @todo_item.done %>
+	</p>
+
+	<p>
+	  <strong>Date:</strong>
+	  <%= @todo_item.date %>
+	</p>
+
+		<p></p>
+		<%= link_to 'Show ', @todo_item, :class => 'btn btn-info fa fa-search-plus'%> |
+		<%= link_to 'Back', todo_items_path, :class => 'btn btn-info fa fa-backward' %>
+</section>

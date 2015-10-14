@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+<!-- Index -->
+<section class="el_index ">
+  <h1 class="col-md-12 text-center ">Plan Event</h1>
+<h4 class="vCard">
+  <table class=" el_table container table">
+    <thead>
+      <tr class="table">
+        <th>Location</th>
+        <th>Description</th>
+        <th>Done</th>
+        <th>Start Date</th>
+        <th colspan="4"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @todo_items.each do |todo_item| %>
+        <tr>
+         <td><%= todo_item.title %></td> 
+         <td><%= todo_item.description %></td>
+
+          
+          <td><% if todo_item.done %>
+              <i class="fa fa-thumbs-up fa-2x"></i>
+              <% else %>
+              <i class="fa fa-thumbs-down fa-2x"></i>
+              <% end %>
+          </td>
+ 
+          <td ><%= todo_item.date %></td>
+
+          <td><%= link_to 'Show', todo_item, :class => 'fa fa-search-plus btn btn-success'%></td>
+          <td><%= link_to 'Edit', edit_todo_item_path(todo_item), :class => "fa fa-pencil-square-o btn btn-info" %></td>
+          <td><%= link_to 'Destroy', todo_item, :class => "fa fa-trash btn btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+
+    </tbody>
+  </table>
+</h4>
+  <br>
+
+  <div class="text-center ">
+    <%=  link_to 'Set-up New Event',  new_todo_item_path ,:class => 'btn btn-primary'%>
+  </div>
+</section>
