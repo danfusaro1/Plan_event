@@ -134,7 +134,7 @@ th {
 }
 
 .el_new2 h1 {
-	font-family:  'Ubuntu'. sans-serif;
+	font-family:  'Ubuntu', sans-serif;
 	text-align: center;
   text-transform: uppercase;
   text-rendering: optimizeLegibility;
